@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-
-const BOOKING_URL = "https://calendly.com/paulosunique/30min"; // Replace with your Calendly booking URL
+import { BOOKING_PAGE_URL } from "@/lib/constants";
 
 const PLANS = {
   monthly: [
@@ -136,14 +136,12 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={BOOKING_PAGE_URL}
                 className={`mt-8 w-full ${plan.featured ? "btn-primary" : "btn-secondary"}`}
               >
                 Book a Call
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>

@@ -1,27 +1,28 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Instagram, Music2, Youtube, Linkedin } from "lucide-react";
 
 const NAVIGATION = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/#about" },
+  { label: "Process", href: "/#process" },
+  { label: "Pricing", href: "/#pricing" },
 ];
 
 const SERVICES = [
-  { label: "Ad Editing", href: "#services" },
-  { label: "VSL & UGC Content", href: "#services" },
-  { label: "AI Video Creation", href: "#services" },
-  { label: "Creative Strategy", href: "#services" },
+  { label: "Ad Editing", href: "/#services" },
+  { label: "VSL & UGC Content", href: "/#services" },
+  { label: "AI Video Creation", href: "/#services" },
+  { label: "Creative Strategy", href: "/#services" },
 ];
 
 const RESOURCES = [
-  { label: "Case Studies", href: "#portfolio" },
+  { label: "Case Studies", href: "/#portfolio" },
   { label: "Blog", href: "#" },
   { label: "FAQs", href: "#" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const LEGAL = [
@@ -101,12 +102,12 @@ function FooterColumn({
       <ul className="mt-4 space-y-3">
         {links.map((link) => (
           <li key={link.label}>
-            <a
+            <Link
               href={link.href}
               className="text-sm text-ink-500 transition-colors hover:text-lime-400"
             >
               {link.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

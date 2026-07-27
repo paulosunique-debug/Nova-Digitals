@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-
-const BOOKING_URL = "https://calendly.com/paulosunique/30min"; // Replace with your Calendly booking URL
+import { BOOKING_PAGE_URL } from "@/lib/constants";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -54,17 +54,12 @@ export default function Hero() {
             variants={fadeUp}
             className="mt-8 flex flex-wrap items-center gap-4"
           >
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
+            <Link href={BOOKING_PAGE_URL} className="btn-primary">
               Book a Call
-            </a>
-            <a href="#portfolio" className="btn-secondary">
+            </Link>
+            <Link href="/#portfolio" className="btn-secondary">
               View Our Work
-            </a>
+            </Link>
           </motion.div>
 
           <motion.div

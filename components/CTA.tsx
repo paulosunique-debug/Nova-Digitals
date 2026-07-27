@@ -1,9 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-
-const BOOKING_URL = "https://calendly.com/paulosunique/30min"; // Replace with your Calendly booking URL
+import { BOOKING_PAGE_URL } from "@/lib/constants";
 
 export default function CTA() {
   return (
@@ -23,15 +23,10 @@ export default function CTA() {
             Book a free call and let&apos;s talk about how we can grow your
             brand.
           </p>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary shrink-0"
-          >
+          <Link href={BOOKING_PAGE_URL} className="btn-primary shrink-0">
             Book a Call
             <ArrowRight size={16} />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

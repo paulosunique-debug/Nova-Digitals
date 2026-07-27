@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play } from "lucide-react";
 
@@ -91,9 +92,9 @@ export default function Portfolio() {
         </div>
 
         <div className="mt-12 text-center">
-          <a href="#contact" className="btn-secondary">
+          <Link href="/#contact" className="btn-secondary">
             View More Work
-          </a>
+          </Link>
         </div>
       </div>
     </section>

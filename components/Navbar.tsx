@@ -4,18 +4,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { BOOKING_PAGE_URL } from "@/lib/constants";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/#about" },
+  { label: "Process", href: "/#process" },
+  { label: "Pricing", href: "/#pricing" },
 ];
-
-// Replace with your Calendly booking URL
-const BOOKING_URL = "https://calendly.com/paulosunique/30min";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,7 +21,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-base-700/60 bg-base-950/80 backdrop-blur-md">
       <nav className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
-        <Link href="#home" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           {/* Replace with your official Nova Digitals logo */}
           <Image
             src="/logo/logo-placeholder.svg"
@@ -40,24 +38,22 @@ export default function Navbar() {
         <ul className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-sm text-ink-300 transition-colors hover:text-lime-400"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={BOOKING_PAGE_URL}
           className="btn-primary hidden md:inline-flex"
         >
           Book a Call
-        </a>
+        </Link>
 
         <button
           className="md:hidden text-ink-100"
@@ -73,24 +69,23 @@ export default function Navbar() {
           <ul className="container-px mx-auto flex flex-col gap-1 py-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
                   className="block py-3 text-ink-300 hover:text-lime-400"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="pt-2">
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={BOOKING_PAGE_URL}
+                onClick={() => setOpen(false)}
                 className="btn-primary w-full"
               >
                 Book a Call
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
