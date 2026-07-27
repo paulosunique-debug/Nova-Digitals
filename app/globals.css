@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Coolvetica — display face for headings & the logotype.
+   Add your licensed files to /public/fonts (see public/fonts/README.md).
+   Until then, this rule simply won't match and --font-display below
+   falls back to Manrope, so nothing breaks. */
+@font-face {
+  font-family: "Coolvetica";
+  src:
+    url("/fonts/coolvetica-rg.woff2") format("woff2"),
+    url("/fonts/coolvetica-rg.woff") format("woff");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Coolvetica is tall, narrow and single-weight — Manrope's Bold/ExtraBold
+     stand in cleanly as a fallback for weight and for browsers/builds
+     without the licensed files installed yet. */
+  --font-display: "Coolvetica", var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #08090a;
+  color: #f5f6f5;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #b6ff3c;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: #b6ff3c;
+  color: #08090a;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.section-eyebrow {
+  @apply text-lime-400 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase;
+}
+
+.section-title {
+  @apply font-display text-3xl md:text-[2.75rem] leading-[1.08] tracking-tight font-bold text-ink-100;
+}
+
+.card-surface {
+  @apply bg-base-800 border border-base-700 rounded-xl2;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-sm font-semibold text-base-950 transition-all hover:bg-lime-500 hover:shadow-glow-sm active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-base-700 bg-transparent px-6 py-3 text-sm font-semibold text-ink-100 transition-all hover:border-lime-400/60 hover:text-lime-400 active:scale-[0.98];
+}
+
+.container-px {
+  @apply px-6 md:px-10 lg:px-16;
+}
