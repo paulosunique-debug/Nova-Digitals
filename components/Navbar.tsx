@@ -15,7 +15,7 @@ const NAV_LINKS = [
 ];
 
 // Replace with your Calendly booking URL
-const BOOKING_URL = "https://calendly.com/your-agency/intro-call";
+const BOOKING_URL = "https://calendly.com/paulosunique/30min";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

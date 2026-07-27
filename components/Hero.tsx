@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const BOOKING_URL = "https://calendly.com/your-agency/intro-call"; // Replace with your Calendly booking URL
+const BOOKING_URL = "https://calendly.com/paulosunique/30min"; // Replace with your Calendly booking URL
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },

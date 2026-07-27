@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-const BOOKING_URL = "https://calendly.com/your-agency/intro-call"; // Replace with your Calendly booking URL
+const BOOKING_URL = "https://calendly.com/paulosunique/30min"; // Replace with your Calendly booking URL
 
 const PLANS = {
   monthly: [
