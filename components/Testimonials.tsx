@@ -10,28 +10,28 @@ const TESTIMONIALS = [
     name: "Jason T.",
     role: "E-commerce Brand Owner",
     // Replace with your client's headshot
-    avatar: "/testimonials/person-1.svg",
+    avatar: "/testimonials/person-1.jpg",
     quote:
       "Their ad edits increased our ROAS by 2x in just two weeks. Absolute game-changer.",
   },
   {
     name: "Sophie M.",
     role: "Marketing Director",
-    avatar: "/testimonials/person-2.svg",
+    avatar: "/testimonials/person-2.jpg",
     quote:
       "The UGC-style videos felt so natural and converted way better than our old content.",
   },
   {
     name: "Daniel K.",
     role: "DTC Founder",
-    avatar: "/testimonials/person-3.svg",
+    avatar: "/testimonials/person-3.jpg",
     quote:
       "Professional, fast, and always delivers. Our go-to team for all video content.",
   },
   {
     name: "Maria L.",
     role: "Growth Lead",
-    avatar: "/testimonials/person-4.svg",
+    avatar: "/testimonials/person-4.jpg",
     quote:
       "Nova Digitals feels like an extension of our in-house team, not an outside vendor.",
   },
