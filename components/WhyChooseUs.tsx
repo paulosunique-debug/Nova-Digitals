@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
         >
           {/* Replace with a photo of your studio/team setup */}
           <Image
-            src="/about/about-placeholder.svg"
+            src="/about/about-placeholder.png"
             alt="Nova Digitals editing workstation"
             width={560}
             height={440}

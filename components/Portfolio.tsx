@@ -16,12 +16,12 @@ const WORK: {
   // Replace with your portfolio video thumbnail
   thumb: string;
 }[] = [
-  { title: "Skincare Brand Ad", category: "Ad Edits", tag: "Ad Edit", thumb: "/portfolio/portfolio-1.svg" },
-  { title: "Fitness Supplement VSL", category: "VSLs", tag: "VSL Video", thumb: "/portfolio/portfolio-2.svg" },
-  { title: "UGC for Home Gadget", category: "UGC Content", tag: "UGC Video", thumb: "/portfolio/portfolio-3.svg" },
-  { title: "Food Delivery Ad", category: "Ad Edits", tag: "Ad Edit", thumb: "/portfolio/portfolio-4.svg" },
-  { title: "AI Product Explainer", category: "AI Videos", tag: "AI Video", thumb: "/portfolio/portfolio-5.svg" },
-  { title: "Fashion Brand Ad", category: "UGC Content", tag: "Ad Edit", thumb: "/portfolio/portfolio-6.svg" },
+  { title: "Skincare Brand Ad", category: "Ad Edits", tag: "Ad Edit", thumb: "/portfolio/portfolio-1.jpg" },
+  { title: "Fitness Supplement VSL", category: "VSLs", tag: "VSL Video", thumb: "/portfolio/portfolio-2.jpg" },
+  { title: "UGC for Home Gadget", category: "UGC Content", tag: "UGC Video", thumb: "/portfolio/portfolio-3.jpg" },
+  { title: "Food Delivery Ad", category: "Ad Edits", tag: "Ad Edit", thumb: "/portfolio/portfolio-4.jpg" },
+  { title: "AI Product Explainer", category: "AI Videos", tag: "AI Video", thumb: "/portfolio/portfolio-5.jpg" },
+  { title: "Fashion Brand Ad", category: "UGC Content", tag: "Ad Edit", thumb: "/portfolio/portfolio-6.jpg" },
 ];
 
 export default function Portfolio() {

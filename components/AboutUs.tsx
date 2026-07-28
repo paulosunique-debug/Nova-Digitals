@@ -67,7 +67,7 @@ export default function AboutUs() {
           >
             {/* Replace with a real photo of your team or workspace */}
             <Image
-              src="/about/about-placeholder.svg"
+              src="/about/about-placeholder2.png"
               alt="Nova Digitals team workspace"
               width={560}
               height={440}

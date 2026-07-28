@@ -95,10 +95,10 @@ export default function Hero() {
         >
           {/* Replace with your hero illustration / product shot */}
           <Image
-            src="/hero/hero-placeholder.svg"
+            src="/hero/hero-placeholder.png"
             alt="Nova Digitals — ad editing showcase"
-            width={480}
-            height={480}
+            width={450}
+            height={450}
             priority
             className="max-w-full"
           />

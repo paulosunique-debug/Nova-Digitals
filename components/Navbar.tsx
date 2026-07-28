@@ -24,7 +24,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* Replace with your official Nova Digitals logo */}
           <Image
-            src="/logo/logo-placeholder.svg"
+            src="/logo/logo-placeholder.png"
             alt="Nova Digitals logo"
             width={36}
             height={36}
